@@ -41,9 +41,9 @@ npm run build-jscrush
 It will log:
 
 ```
-1647 build/build.js
-1108 build/build.min.js
- 787 build/bundle.js
+1930 build/build.js
+1197 build/build.min.js
+ 827 build/bundle.js
 ```
 
 ### bundle with regpack
@@ -59,9 +59,9 @@ REGPACK="--crushGainFactor 1 --crushLengthFactor 0 --crushCopiesFactor 0" npm ru
 It will log:
 
 ```
-1647 build/build.js
-1108 build/build.min.js
- 764 build/bundle.js
+1930 build/build.js
+1197 build/build.min.js
+ 805 build/bundle.js
 ```
 
 ### Configure the concatenation

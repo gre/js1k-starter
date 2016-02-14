@@ -15,7 +15,7 @@
     "build-dev": "npm run compileglsl && npm run concat && cp build/build.js build/bundle.js",
     "build-jscrush": "export NODE_ENV=production; npm run clean && npm run compileglsl && npm run concat && npm run jscrush",
     "build-regpack": "export NODE_ENV=production; npm run clean && npm run compileglsl && npm run concat && npm run regpack",
-    "clean": "rm -rf build/; mkdir -p build target",
+    "clean": "rm -rf build/; mkdir -p build",
     "compileglsl": "./scripts/compileglslfiles.sh src build",
     "concat": "./scripts/concat.sh > build/build.js",
     "jscrush": "cat build/build.js | uglifyjs -c -m toplevel=true | tee build/build.min.js | jscrush > build/bundle.js && wc -c build/*.js",
