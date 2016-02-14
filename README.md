@@ -1,8 +1,6 @@
 js1k starter template
 =====================
 
-## Features
-
 - Your source files in `src/` (can use multiple files)
 - **Live reload server**
 - **UglifyJS***
@@ -12,6 +10,7 @@ js1k starter template
 - support `*.frag` and `*.vert` shader files
   - **shader minification with `glslmin`**
 - support for `*.dev.js` and `*.prod.js` split based on the release mode so you can easily debug things (like shader compilation error only shown in dev mode).
+- current source code contains a WebGL example with webgl function helper. Feel free to fork and remove them ;)
 
 ## Usage
 
