@@ -12,6 +12,9 @@ js1k starter template
 - support for `*.dev.js` and `*.prod.js` split based on the release mode so you can easily debug things (like shader compilation error only shown in dev mode).
 - current source code contains a WebGL example with webgl function helper. Feel free to fork and remove them ;)
 
+<img width="280" alt="screen shot 2016-02-14 at 12 55 57" src="https://cloud.githubusercontent.com/assets/211411/13033536/607199d8-d31a-11e5-8afd-21de56b46bd4.png">
+
+
 ## Usage
 
 ### Clone it
