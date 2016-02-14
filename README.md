@@ -3,11 +3,14 @@ js1k starter template
 
 ## Features
 
-- Your source files in `src/`
-- Live reload server
-- ESLint :)
-- Split your compo into multiple files
-- support `*.frag` and `*.vert` shader files and shader minification with `glslmin`
+- Your source files in `src/` (can use multiple files)
+- **Live reload server**
+- **UglifyJS***
+- build with **jscrush**
+- build with **regpack**
+- **ESLint** ready – can save you from many headaches (with a proper editor integration).
+- support `*.frag` and `*.vert` shader files
+  - **shader minification with `glslmin`**
 - support for `*.dev.js` and `*.prod.js` split based on the release mode so you can easily debug things (like shader compilation error only shown in dev mode).
 
 ## Usage
