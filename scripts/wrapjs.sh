@@ -2,6 +2,6 @@
 
 # usage: cat glslfile | ./wrapjs.sh varname
 
-echo -n "var $1 ='"
+echo -n "/* @const */ var $1 ='"
 perl -p -e 's/\n/\\n/';
 echo -ne "';"

@@ -8,7 +8,7 @@
     "livereload": "^0.4.1",
     "uglify-js": "^2.6.1",
     "watchy": "^0.6.6",
-    "regpack": "gre/RegPack#patch-1"
+    "regpack": "gre/RegPack#master"
   },
   "scripts": {
     "start": "npm run clean && watchy -w src -- npm run build-dev & livereload build/bundle.js & http-server",
@@ -18,7 +18,7 @@
     "clean": "rm -rf build/; mkdir -p build target",
     "compileglsl": "./scripts/compileglslfiles.sh src build",
     "concat": "./scripts/concat.sh > build/build.js",
-    "jscrush": "cat build/build.js | uglifyjs -cm | tee build/build.min.js | jscrush > build/bundle.js && wc -c build/*.js",
-    "regpack": "cat build/build.js | uglifyjs -cm | tee build/build.min.js && ./scripts/regpack.sh build/build.min.js > build/bundle.js && wc -c build/*.js"
+    "jscrush": "cat build/build.js | uglifyjs -c -m toplevel=true | tee build/build.min.js | jscrush > build/bundle.js && wc -c build/*.js",
+    "regpack": "cat build/build.js | uglifyjs -c -m toplevel=true | tee build/build.min.js | regpack - $REGPACK > build/bundle.js && wc -c build/*.js"
   }
 }
