@@ -33,7 +33,7 @@ npm start
 ### bundle with jscrush
 
 ```
-npm run jscrush
+npm run build-jscrush
 ```
 
 > (can be used in combination of the livereload server)
@@ -49,7 +49,7 @@ It will log:
 ### bundle with regpack
 
 ```
-npm run regpack
+npm run build-regpack
 
 # or
 
